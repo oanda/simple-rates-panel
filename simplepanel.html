@@ -50,41 +50,6 @@ $(function() {
         setInterval(getCurrentRates, 1000);
     });
 
-    //OANDA.rate.list_symbols(sessionToken, function(listSymbolsResponse) {
-    //    //add the symbols to our drop down
-    //    for(var cur in listSymbolsResponse.symbols) {
-    //        var symbolName = listSymbolsResponse.instruments[cur].displayName;
-
-    //        selectSymbol.append("<option value='" + symbolName + "'>" + symbolName + "</option>");
-    //    }
-
-    //    //select EUR/USD by default
-    //    selectSymbol.find("[value=EUR/USD]").attr("selected", "selected");
-    //    setInterval(getCurrentRates, 1000);
-    //});
-
-//
-//    //obtain a session token
-//    //OANDA.user.login("testusr2", "Passw0rd", function(loginResponse) {
-//    OANDA.user.login("tyruben", "obyadwogot", function(loginResponse) {
-//        sessionToken = loginResponse.session_token;
-//
-//        //get the symbol list
-//        OANDA.rate.list_symbols(sessionToken, function(listSymbolsResponse) {
-//            //add the symbols to our drop down
-//            for(var cur in listSymbolsResponse.symbols) {
-//                var symbolName = listSymbolsResponse.symbols[cur].symbol;
-//
-//                selectSymbol.append("<option value='" + symbolName + "'>" + symbolName + "</option>");
-//            }
-//
-//            //select EUR/USD by default
-//            selectSymbol.find("[value=EUR/USD]").attr("selected", "selected");
-//
-//            //start getting rate
-//            setInterval(getCurrentRates, 1000);
-//        });
-//    });
 });
 </script>
 </head>
