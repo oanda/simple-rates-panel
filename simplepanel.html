@@ -17,7 +17,7 @@ $(function() {
     var sessionToken = null;
     //called every second to refresh the display
     function getCurrentRates() {
-        OANDA.rate.quote(sessionToken, [$("#selectSymbol").val()], function(rateQuoteResponse) {
+        OANDA.rate.quote([$("#selectSymbol").val()], function(rateQuoteResponse) {
             var priceInfo = rateQuoteResponse.prices[0];
 
             //change the divs' background colour if the rates have changed. TODO: some jQuery animation would be nice:)
@@ -37,7 +37,7 @@ $(function() {
     }
 
     //get the symbol list
-    OANDA.rate.list_symbols(sessionToken, function(listSymbolsResponse) {
+    OANDA.rate.list_symbols(function(listSymbolsResponse) {
         //add the symbols to our drop down
         for(var cur in listSymbolsResponse.instruments) {
             var symbolName = listSymbolsResponse.instruments[cur].instrument;
