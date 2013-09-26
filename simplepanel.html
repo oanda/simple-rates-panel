@@ -1,7 +1,7 @@
 <html>
 <head>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/json2/20121008/json2.min.js"></script>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="application/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script type="text/javascript" src="http://developer.oanda.com/oandajs/oanda.js"></script>
 <script type="text/javascript">
 $(function() {
@@ -37,7 +37,7 @@ $(function() {
     }
 
     //get the symbol list
-    OANDA.rate.list_symbols(function(listSymbolsResponse) {
+    OANDA.rate.instruments(['pip', 'precision', 'marginRate'],function(listSymbolsResponse) {
         //add the symbols to our drop down
         for(var cur in listSymbolsResponse.instruments) {
             var symbolName = listSymbolsResponse.instruments[cur].instrument;
