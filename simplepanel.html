@@ -37,7 +37,7 @@ $(function() {
     }
 
     //get the symbol list
-    OANDA.rate.instruments(['pip', 'precision', 'marginRate'],function(listSymbolsResponse) {
+    OANDA.rate.instruments(0, ['pip', 'precision', 'marginRate'],function(listSymbolsResponse) {
         //add the symbols to our drop down
         for(var cur in listSymbolsResponse.instruments) {
             var symbolName = listSymbolsResponse.instruments[cur].instrument;
