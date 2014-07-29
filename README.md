@@ -11,6 +11,6 @@ http://oanda.github.com/simple-rates-panel/simplepanel.html
 
 * Clone this repo and open the simple-panel.html file.
 * Choose the currency pair to monitor
-* Profit
+* Rates should appear and update periodically
 
 
