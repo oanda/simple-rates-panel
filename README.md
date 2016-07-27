@@ -9,8 +9,8 @@ http://oanda.github.com/simple-rates-panel/simplepanel.html
 
 ### Installation
 
-* Clone this repo and open the simple-panel.html file.
+* Clone this repo and edit the simple-panel.html file.
+* Set your Access Token and Account ID
+* Open simple-panel.html in a browser.
 * Choose the currency pair to monitor
 * Rates should appear and update periodically
-
-
